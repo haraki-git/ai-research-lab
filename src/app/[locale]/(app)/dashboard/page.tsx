@@ -113,7 +113,7 @@ export default function DashboardPage() {
 
   const kpiBorder = [
     '',
-    '',
+    'border-l border-border',
     'border-l border-border',
     '',
   ]
