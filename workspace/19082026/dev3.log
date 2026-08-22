@@ -1,0 +1,17 @@
+npm notice run ai-research-lab@0.1.0 dev
+npm notice run next dev
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 482ms
+✓ Running next.config.mjs took 59ms
+
+(node:14560) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/laragon/www/ai-research-lab/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\laragon\www\ai-research-lab\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ GET / 404 in 3.4s (next.js: 3.2s, application-code: 198ms)
+[?25h
+
+C:\laragon\www\ai-research-lab>

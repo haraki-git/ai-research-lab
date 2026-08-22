@@ -1,0 +1,520 @@
+npm notice run ai-research-lab@0.1.0 dev
+npm notice run next dev
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 843ms
+✓ Running next.config.mjs took 86ms
+
+○ Compiling /_not-found/page ...
+(node:11192) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/laragon/www/ai-research-lab/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\laragon\www\ai-research-lab\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ GET / 404 in 6.2s (next.js: 6.0s, application-code: 278ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
++                         className="inter_957f60c9-module__QhdgKW__variable crimson_pro_8ad52756-module__ryvpjq__vari..."
+-                         className="inter_957f60c9-module__QhdgKW__variable crimson_pro_8ad52756-module__ryvpjq__vari..."
+-                         style={{color-scheme:"light"}}
+                        >
+                  ...
+ 
+ GET /favicon.ico 404 in 2.6s (next.js: 1607ms, generate-params: 668ms, application-code: 371ms)
+ GET /en 200 in 252ms (next.js: 20ms, generate-params: 13ms, application-code: 219ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/en" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
++                         className="inter_957f60c9-module__QhdgKW__variable crimson_pro_8ad52756-module__ryvpjq__vari..."
+-                         className="inter_957f60c9-module__QhdgKW__variable crimson_pro_8ad52756-module__ryvpjq__vari..."
+-                         style={{color-scheme:"light"}}
+                        >
+                  ...
+ 
+ GET /favicon.ico 404 in 271ms (next.js: 20ms, generate-params: 0.1ms, application-code: 251ms)
+⨯ Error: `usePathname` is not supported in Server Components. You can use this hook if you convert the calling component to a Client Component.
+    at Sidebar (src\components\Sidebar.tsx:9:31)
+   7 | export default function Sidebar() {
+   8 |   const t = useTranslations('nav')
+>  9 |   const pathname = usePathname()
+     |                               ^
+  10 |
+  11 |   const navItems = [
+  12 |     { name: t('dashboard'), icon: BarChart3, href: '/dashboard' }, {
+  digest: '4117871544'
+}
+ GET /en/dashboard 500 in 4.3s (next.js: 1896ms, generate-params: 1831ms, application-code: 556ms)
+[browser] Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template). 
+[browser] Uncaught Error: `usePathname` is not supported in Server Components. You can use this hook if you convert the calling component to a Client Component.
+    at Sidebar (src\components\Sidebar.tsx:9:31)
+   7 | export default function Sidebar() {
+   8 |   const t = useTranslations('nav')
+>  9 |   const pathname = usePathname()
+     |                               ^
+  10 |
+  11 |   const navItems = [
+  12 |     { name: t('dashboard'), icon: BarChart3, href: '/dashboard' },
+ GET /favicon.ico 404 in 502ms (next.js: 47ms, generate-params: 17ms, application-code: 438ms)
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+[browser] ./src/components/Sidebar.tsx:3:1
+Error: The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+  1 | import Link from 'next/link'
+  2 | import { BarChart3, User, FlaskConical, Database, Shield } from 'lucide-react'
+> 3 | 'use client'
+    | ^^^^^^^^^^^^
+  4 |
+  5 | import { useTranslations } from 'next-intl'
+  6 | import { usePathname } from '@/i18n/navigation'
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/components/Sidebar.tsx
+    ./src/app/[locale]/(app)/layout.tsx 
+ GET / 404 in 818ms (next.js: 530ms, application-code: 289ms)
+ GET /en/dashboard 200 in 877ms (next.js: 121ms, generate-params: 19ms, application-code: 736ms)
+ GET /en 200 in 1100ms (next.js: 238ms, generate-params: 25ms, application-code: 837ms)
+ GET / 404 in 334ms (next.js: 52ms, application-code: 282ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/en/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
++                         className="inter_957f60c9-module__QhdgKW__variable crimson_pro_8ad52756-module__ryvpjq__vari..."
+-                         className="inter_957f60c9-module__QhdgKW__variable crimson_pro_8ad52756-module__ryvpjq__vari..."
+-                         style={{color-scheme:"light"}}
+                        >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
++                         className="inter_957f60c9-module__QhdgKW__variable crimson_pro_8ad52756-module__ryvpjq__vari..."
+-                         className="inter_957f60c9-module__QhdgKW__variable crimson_pro_8ad52756-module__ryvpjq__vari..."
+-                         style={{color-scheme:"light"}}
+                        >
+                  ...
+ 
+ GET /en/dashboard 200 in 92ms (next.js: 4ms, generate-params: 8ms, application-code: 80ms)
+ GET / 404 in 137ms (next.js: 10ms, application-code: 127ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
++                         className="inter_957f60c9-module__QhdgKW__variable crimson_pro_8ad52756-module__ryvpjq__vari..."
+-                         className="inter_957f60c9-module__QhdgKW__variable crimson_pro_8ad52756-module__ryvpjq__vari..."
+-                         style={{color-scheme:"light"}}
+                        >
+                  ...
+ 
+ GET / 404 in 404ms (next.js: 116ms, application-code: 288ms)
+ GET /en 200 in 403ms (next.js: 47ms, generate-params: 12ms, application-code: 345ms)
+ GET /en/dashboard 200 in 152ms (next.js: 31ms, generate-params: 22ms, application-code: 100ms)
+ GET / 404 in 289ms (next.js: 100ms, application-code: 190ms)
+[?25h

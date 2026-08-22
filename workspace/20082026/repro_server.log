@@ -1,0 +1,710 @@
+npm notice run ai-research-lab@0.1.0 dev
+npm notice run node scripts/dev.mjs
+[dev] Starting Next.js on port 3000...
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 566ms
+✓ Running next.config.mjs took 68ms
+
+○ Compiling /[locale] ...
+ GET /en 200 in 13.1s (next.js: 11.9s, generate-params: 678ms, application-code: 552ms)
+ GET /id 200 in 98ms (next.js: 11ms, generate-params: 7ms, application-code: 80ms)
+ GET /en 200 in 199ms (next.js: 6ms, generate-params: 11ms, application-code: 182ms)
+ GET /id 200 in 179ms (next.js: 4ms, generate-params: 6ms, application-code: 169ms)
+ GET /zh 200 in 226ms (next.js: 6ms, generate-params: 8ms, application-code: 213ms)
+ GET /id 200 in 200ms (next.js: 30ms, generate-params: 17ms, application-code: 152ms)
+ GET /id 200 in 113ms (next.js: 16ms, generate-params: 10ms, application-code: 86ms)
+ GET /id 200 in 242ms (next.js: 4ms, generate-params: 6ms, application-code: 232ms)
+⨯ ReferenceError: getLocale is not defined
+    at RootLayout (src\app\layout.tsx:38:18)
+  36 |   children: React.ReactNode
+  37 | }) {
+> 38 |   const locale = await getLocale()
+     |                  ^
+  39 |
+  40 |   return (
+  41 |     <html {
+  digest: '2711387423'
+}
+ GET /id 200 in 151ms (next.js: 39ms, generate-params: 9ms, application-code: 102ms)
+ GET /id 200 in 247ms (next.js: 39ms, generate-params: 10ms, application-code: 197ms)
+⨯ ./src/app/[locale]/layout.tsx:5:1
+Error: Module not found: Can't resolve './HtmlLangSync'
+  [90m3 |[0m [36mimport[0m { notFound, redirect } [36mfrom[0m [32m'next/navigation'[0m
+  [90m4 |[0m [36mimport[0m { routing } [36mfrom[0m [32m'@/i18n/routing'[0m
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mHtmlLangSync[0m [36mfrom[0m [32m'./HtmlLangSync'[0m
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36mexport[0m [36mfunction[0m generateStaticParams() {
+  [90m8 |[0m   [36mreturn[0m routing.locales.map((locale) => ({ locale }))
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/[locale]/layout.tsx:5:1
+Error: Module not found: Can't resolve './HtmlLangSync'
+  [90m3 |[0m [36mimport[0m { notFound, redirect } [36mfrom[0m [32m'next/navigation'[0m
+  [90m4 |[0m [36mimport[0m { routing } [36mfrom[0m [32m'@/i18n/routing'[0m
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mHtmlLangSync[0m [36mfrom[0m [32m'./HtmlLangSync'[0m
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36mexport[0m [36mfunction[0m generateStaticParams() {
+  [90m8 |[0m   [36mreturn[0m routing.locales.map((locale) => ({ locale }))
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/[locale]/layout.tsx:5:1
+Error: Module not found: Can't resolve './HtmlLangSync'
+  [90m3 |[0m [36mimport[0m { notFound, redirect } [36mfrom[0m [32m'next/navigation'[0m
+  [90m4 |[0m [36mimport[0m { routing } [36mfrom[0m [32m'@/i18n/routing'[0m
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mHtmlLangSync[0m [36mfrom[0m [32m'./HtmlLangSync'[0m
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36mexport[0m [36mfunction[0m generateStaticParams() {
+  [90m8 |[0m   [36mreturn[0m routing.locales.map((locale) => ({ locale }))
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/[locale]/layout.tsx:5:1
+Error: Module not found: Can't resolve './HtmlLangSync'
+  [90m3 |[0m [36mimport[0m { notFound, redirect } [36mfrom[0m [32m'next/navigation'[0m
+  [90m4 |[0m [36mimport[0m { routing } [36mfrom[0m [32m'@/i18n/routing'[0m
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mHtmlLangSync[0m [36mfrom[0m [32m'./HtmlLangSync'[0m
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36mexport[0m [36mfunction[0m generateStaticParams() {
+  [90m8 |[0m   [36mreturn[0m routing.locales.map((locale) => ({ locale }))
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/[locale]/layout.tsx:5:1
+Error: Module not found: Can't resolve './HtmlLangSync'
+  [90m3 |[0m [36mimport[0m { notFound, redirect } [36mfrom[0m [32m'next/navigation'[0m
+  [90m4 |[0m [36mimport[0m { routing } [36mfrom[0m [32m'@/i18n/routing'[0m
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mHtmlLangSync[0m [36mfrom[0m [32m'./HtmlLangSync'[0m
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36mexport[0m [36mfunction[0m generateStaticParams() {
+  [90m8 |[0m   [36mreturn[0m routing.locales.map((locale) => ({ locale }))
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/[locale]/layout.tsx:5:1
+Error: Module not found: Can't resolve './HtmlLangSync'
+  [90m3 |[0m [36mimport[0m { notFound, redirect } [36mfrom[0m [32m'next/navigation'[0m
+  [90m4 |[0m [36mimport[0m { routing } [36mfrom[0m [32m'@/i18n/routing'[0m
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mHtmlLangSync[0m [36mfrom[0m [32m'./HtmlLangSync'[0m
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36mexport[0m [36mfunction[0m generateStaticParams() {
+  [90m8 |[0m   [36mreturn[0m routing.locales.map((locale) => ({ locale }))
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] ./src/app/[locale]/layout.tsx:5:1
+Error: Module not found: Can't resolve './HtmlLangSync'
+  3 | import { notFound, redirect } from 'next/navigation'
+  4 | import { routing } from '@/i18n/routing'
+> 5 | import HtmlLangSync from './HtmlLangSync'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export function generateStaticParams() {
+  8 |   return routing.locales.map((locale) => ({ locale }))
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/app/[locale]/layout.tsx:5:1
+Error: Module not found: Can't resolve './HtmlLangSync'
+  3 | import { notFound, redirect } from 'next/navigation'
+  4 | import { routing } from '@/i18n/routing'
+> 5 | import HtmlLangSync from './HtmlLangSync'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export function generateStaticParams() {
+  8 |   return routing.locales.map((locale) => ({ locale }))
+
+https://nextjs.org/docs/messages/module-not-found 
+✓ Compiled in 373ms
+ GET /id 200 in 155ms (next.js: 57ms, generate-params: 8ms, application-code: 89ms)
+ GET /en 200 in 253ms (next.js: 11ms, generate-params: 9ms, application-code: 233ms)
+ GET /id 200 in 282ms (next.js: 12ms, generate-params: 17ms, application-code: 252ms)
+ GET /zh 200 in 289ms (next.js: 7ms, generate-params: 14ms, application-code: 268ms)
+ GET /id 200 in 184ms (next.js: 92ms, generate-params: 17ms, application-code: 75ms)
+ GET /id 200 in 391ms (next.js: 10ms, generate-params: 20ms, application-code: 360ms)
+ GET /id 200 in 210ms (next.js: 4ms, generate-params: 9ms, application-code: 197ms)
+ GET /id 200 in 158ms (next.js: 27ms, generate-params: 18ms, application-code: 114ms)
+ GET /en 200 in 237ms (next.js: 3ms, generate-params: 8ms, application-code: 226ms)
+ GET /id 200 in 349ms (next.js: 10ms, generate-params: 21ms, application-code: 318ms)
+ GET /zh 200 in 325ms (next.js: 15ms, generate-params: 29ms, application-code: 281ms)
+ GET /id 200 in 229ms (next.js: 3ms, generate-params: 9ms, application-code: 217ms)
+ GET /id 200 in 136ms (next.js: 32ms, generate-params: 15ms, application-code: 89ms)
+⨯ ReferenceError: useTranslations is not defined
+    at Home (src\app\[locale]\page.tsx:18:13)
+  16 |
+  17 | export default function Home() {
+> 18 |   const t = useTranslations('landing')
+     |             ^
+  19 |   const tn = useTranslations('nav')
+  20 |
+  21 |   const features: Feature[] = [ {
+  digest: '207189589'
+}
+ GET /id 200 in 179ms (next.js: 58ms, generate-params: 13ms, application-code: 107ms)
+ GET /id 200 in 379ms (next.js: 53ms, generate-params: 17ms, application-code: 309ms)
+ GET /en 200 in 234ms (next.js: 16ms, generate-params: 25ms, application-code: 194ms)
+ GET /id 200 in 122ms (next.js: 8ms, generate-params: 16ms, application-code: 98ms)
+ GET /zh 200 in 112ms (next.js: 7ms, generate-params: 10ms, application-code: 95ms)
+ GET /en 200 in 225ms (next.js: 8ms, generate-params: 13ms, application-code: 204ms)
+ GET /id 200 in 177ms (next.js: 91ms, generate-params: 16ms, application-code: 71ms)
+ GET /zh 200 in 76ms (next.js: 5ms, generate-params: 6ms, application-code: 66ms)
+ GET /en/dashboard 200 in 2.6s (next.js: 1409ms, generate-params: 844ms, application-code: 323ms)
+ GET /id/dashboard 200 in 130ms (next.js: 9ms, generate-params: 15ms, application-code: 106ms)
+ GET /zh/dashboard 200 in 83ms (next.js: 30ms, generate-params: 13ms, application-code: 40ms)
+ GET /id/dashboard 200 in 138ms (next.js: 8ms, generate-params: 18ms, application-code: 112ms)
+ GET /zh/dashboard 200 in 95ms (next.js: 5ms, generate-params: 9ms, application-code: 80ms)
+ GET /en 200 in 124ms (next.js: 31ms, generate-params: 20ms, application-code: 73ms)
+ GET /id 200 in 87ms (next.js: 6ms, generate-params: 14ms, application-code: 68ms)
+ GET /id/dashboard 200 in 73ms (next.js: 8ms, generate-params: 18ms, application-code: 48ms)
+ GET /id 200 in 67ms (next.js: 5ms, generate-params: 8ms, application-code: 53ms)
+ GET /zh 200 in 80ms (next.js: 12ms, generate-params: 9ms, application-code: 59ms)
+ GET /en 200 in 71ms (next.js: 7ms, generate-params: 10ms, application-code: 54ms)
+ GET /en/dashboard 200 in 49ms (next.js: 6ms, generate-params: 13ms, application-code: 30ms)
+ GET /en/security 200 in 1071ms (next.js: 1044ms, application-code: 27ms)
+ GET /en/library 200 in 988ms (next.js: 359ms, generate-params: 605ms, application-code: 24ms)
+ GET /en 200 in 112ms (next.js: 7ms, generate-params: 11ms, application-code: 94ms)
+ GET /en 200 in 172ms (next.js: 6ms, generate-params: 18ms, application-code: 149ms)
+ GET /en 200 in 101ms (next.js: 4ms, generate-params: 6ms, application-code: 91ms)
+ GET /en 200 in 107ms (next.js: 4ms, generate-params: 9ms, application-code: 95ms)
+ GET /id/dashboard 200 in 103ms (next.js: 4ms, generate-params: 6ms, application-code: 93ms)
+ GET /id/dashboard 200 in 105ms (next.js: 3ms, generate-params: 7ms, application-code: 95ms)
+ GET /id/dashboard 200 in 94ms (next.js: 3ms, generate-params: 9ms, application-code: 83ms)
+ GET /zh 200 in 164ms (next.js: 4ms, generate-params: 12ms, application-code: 148ms)
+ GET /zh 200 in 120ms (next.js: 3ms, generate-params: 6ms, application-code: 111ms)
+ GET /en 200 in 100ms (next.js: 3ms, generate-params: 6ms, application-code: 91ms)
+ GET /en 200 in 152ms (next.js: 8ms, generate-params: 13ms, application-code: 132ms)
+ GET /en/dashboard 200 in 60ms (next.js: 12ms, generate-params: 13ms, application-code: 34ms)
+ GET /en/dashboard 200 in 77ms (next.js: 14ms, generate-params: 7ms, application-code: 56ms)
+ GET /en 200 in 321ms (next.js: 36ms, generate-params: 22ms, application-code: 263ms)
+ GET /en 200 in 126ms (next.js: 6ms, generate-params: 11ms, application-code: 109ms)
+ GET /en 200 in 203ms (next.js: 31ms, generate-params: 24ms, application-code: 148ms)
+ GET /en 200 in 170ms (next.js: 7ms, generate-params: 10ms, application-code: 152ms)
+ GET /en 200 in 115ms (next.js: 4ms, generate-params: 8ms, application-code: 103ms)
+ GET /id/dashboard 200 in 168ms (next.js: 14ms, generate-params: 16ms, application-code: 138ms)
+ GET /id/dashboard 200 in 107ms (next.js: 6ms, generate-params: 7ms, application-code: 94ms)
+ GET /id/dashboard 200 in 145ms (next.js: 7ms, generate-params: 12ms, application-code: 127ms)
+ GET /zh 200 in 222ms (next.js: 5ms, generate-params: 15ms, application-code: 202ms)
+ GET /zh 200 in 158ms (next.js: 7ms, generate-params: 14ms, application-code: 136ms)
+ GET /en/assistant/builder 200 in 2.3s (next.js: 1315ms, generate-params: 989ms, application-code: 43ms)
+ GET /zh/assistant/builder 200 in 79ms (next.js: 17ms, generate-params: 16ms, application-code: 46ms)
+ GET /en/assistant/builder 200 in 89ms (next.js: 6ms, generate-params: 12ms, application-code: 71ms)
+ GET /en 200 in 82ms (next.js: 15ms, generate-params: 12ms, application-code: 55ms)
+ GET /en/assistant/builder 200 in 87ms (next.js: 8ms, generate-params: 16ms, application-code: 63ms)
+ GET /en 200 in 141ms (next.js: 8ms, generate-params: 17ms, application-code: 117ms)
+ GET /en/library 200 in 118ms (next.js: 31ms, generate-params: 15ms, application-code: 72ms)
+✓ Compiled in 164ms
+ GET /en/library 200 in 54ms (next.js: 6ms, generate-params: 7ms, application-code: 41ms)
+✓ Compiled in 295ms
+ GET /en/dashboard 200 in 211ms (next.js: 37ms, generate-params: 24ms, application-code: 150ms)
+ GET /en/dashboard 200 in 108ms (next.js: 5ms, generate-params: 7ms, application-code: 95ms)
+ GET /en/dashboard 200 in 159ms (next.js: 9ms, generate-params: 13ms, application-code: 137ms)
+✓ Compiled in 185ms
+ GET /en/library 200 in 139ms (next.js: 10ms, generate-params: 18ms, application-code: 111ms)
+ GET /en/dashboard 200 in 273ms (next.js: 26ms, generate-params: 12ms, application-code: 236ms)
+ GET /en/dashboard 200 in 127ms (next.js: 8ms, generate-params: 13ms, application-code: 105ms)
+ GET /en/dashboard 200 in 118ms (next.js: 5ms, generate-params: 13ms, application-code: 99ms)
+ GET /en/dashboard 200 in 105ms (next.js: 3ms, generate-params: 9ms, application-code: 93ms)
+ GET /en/dashboard 200 in 121ms (next.js: 5ms, generate-params: 9ms, application-code: 107ms)
+ GET /en/dashboard 200 in 121ms (next.js: 12ms, generate-params: 17ms, application-code: 93ms)
+ GET /en/dashboard 200 in 132ms (next.js: 4ms, generate-params: 10ms, application-code: 117ms)
+ GET /en/dashboard 200 in 190ms (next.js: 11ms, generate-params: 22ms, application-code: 156ms)
+ GET /en/dashboard 200 in 213ms (next.js: 17ms, generate-params: 23ms, application-code: 173ms)
+ GET /en/dashboard 200 in 267ms (next.js: 9ms, generate-params: 27ms, application-code: 231ms)
+ GET /en/dashboard 200 in 133ms (next.js: 6ms, generate-params: 7ms, application-code: 119ms)
+ GET /en 200 in 281ms (next.js: 10ms, generate-params: 18ms, application-code: 253ms)
+ GET /en 200 in 123ms (next.js: 5ms, generate-params: 16ms, application-code: 101ms)
+ GET /en 200 in 109ms (next.js: 3ms, generate-params: 8ms, application-code: 98ms)
+ GET /id/dashboard 200 in 134ms (next.js: 6ms, generate-params: 17ms, application-code: 112ms)
+ GET /id/dashboard 200 in 122ms (next.js: 6ms, generate-params: 14ms, application-code: 102ms)
+ GET /id/dashboard 200 in 126ms (next.js: 9ms, generate-params: 13ms, application-code: 105ms)
+ GET /zh 200 in 112ms (next.js: 6ms, generate-params: 12ms, application-code: 93ms)
+ GET /zh 200 in 120ms (next.js: 8ms, generate-params: 13ms, application-code: 99ms)
+ GET /en 200 in 131ms (next.js: 8ms, generate-params: 17ms, application-code: 107ms)
+ GET /en 200 in 122ms (next.js: 5ms, generate-params: 15ms, application-code: 102ms)
+ GET /en/dashboard 200 in 247ms (next.js: 9ms, generate-params: 20ms, application-code: 218ms)
+ GET /en/dashboard 200 in 153ms (next.js: 5ms, generate-params: 13ms, application-code: 135ms)
+ GET /en/dashboard 200 in 44ms (next.js: 7ms, generate-params: 12ms, application-code: 26ms)
+ GET /en/dashboard 200 in 69ms (next.js: 14ms, generate-params: 8ms, application-code: 47ms)
+ GET /en/research/experiments 200 in 1091ms (next.js: 489ms, generate-params: 572ms, application-code: 29ms)
+ GET /en/dashboard 200 in 69ms (next.js: 17ms, generate-params: 11ms, application-code: 41ms)
+✓ Compiled in 296ms
+ GET /en/dashboard 200 in 101ms (next.js: 22ms, generate-params: 14ms, application-code: 65ms)
+ GET /en/dashboard 200 in 128ms (next.js: 26ms, generate-params: 17ms, application-code: 85ms)
+ GET /en/dashboard 200 in 122ms (next.js: 5ms, generate-params: 9ms, application-code: 108ms)
+ GET /en/dashboard 200 in 113ms (next.js: 8ms, generate-params: 13ms, application-code: 92ms)
+ GET /en/assistant/builder 200 in 51ms (next.js: 9ms, generate-params: 10ms, application-code: 31ms)
+ GET /en/assistant/builder 200 in 114ms (next.js: 28ms, generate-params: 15ms, application-code: 72ms)
+ GET /en/assistant/builder 200 in 133ms (next.js: 17ms, generate-params: 16ms, application-code: 101ms)
+✓ Compiled in 124ms
+ GET /en/assistant/builder 200 in 74ms (next.js: 14ms, generate-params: 7ms, application-code: 53ms)
+ GET /en/assistant/builder 200 in 220ms (next.js: 8ms, generate-params: 15ms, application-code: 196ms)
+ GET /en/assistant/builder 200 in 105ms (next.js: 4ms, generate-params: 8ms, application-code: 93ms)
+ GET /en/assistant/builder 200 in 132ms (next.js: 4ms, generate-params: 11ms, application-code: 117ms)
+ GET /en/assistant/builder 200 in 242ms (next.js: 8ms, generate-params: 18ms, application-code: 216ms)
+ GET /zh/assistant/builder 200 in 103ms (next.js: 3ms, generate-params: 7ms, application-code: 92ms)
+ GET /en 200 in 104ms (next.js: 11ms, generate-params: 5ms, application-code: 88ms)
+ GET /en 200 in 92ms (next.js: 3ms, generate-params: 5ms, application-code: 84ms)
+ GET /en 200 in 90ms (next.js: 4ms, generate-params: 6ms, application-code: 80ms)
+ GET /id/dashboard 200 in 119ms (next.js: 10ms, generate-params: 8ms, application-code: 101ms)
+ GET /id/dashboard 200 in 115ms (next.js: 3ms, generate-params: 6ms, application-code: 106ms)
+ GET /id/dashboard 200 in 152ms (next.js: 6ms, generate-params: 8ms, application-code: 138ms)
+ GET /zh 200 in 118ms (next.js: 6ms, generate-params: 12ms, application-code: 100ms)
+ GET /zh 200 in 118ms (next.js: 4ms, generate-params: 8ms, application-code: 106ms)
+ GET /en/assistant/builder 200 in 114ms (next.js: 4ms, generate-params: 10ms, application-code: 99ms)
+ GET /en/assistant/builder 200 in 120ms (next.js: 13ms, generate-params: 10ms, application-code: 97ms)
+ GET /en/assistant/builder 200 in 113ms (next.js: 5ms, generate-params: 7ms, application-code: 102ms)
+ GET /en/assistant/builder 200 in 79ms (next.js: 3ms, generate-params: 5ms, application-code: 70ms)
+ GET /en/assistant/builder 200 in 474ms (next.js: 124ms, generate-params: 6ms, application-code: 344ms)
+ GET /en/assistant/builder 200 in 79ms (next.js: 5ms, generate-params: 0.0ms, application-code: 74ms)
+ GET /en/assistant/builder 200 in 79ms (next.js: 4ms, generate-params: 0.0ms, application-code: 75ms)
+ GET /en/assistant/builder 200 in 83ms (next.js: 5ms, generate-params: 0.0ms, application-code: 78ms)
+ GET /en/assistant/builder 200 in 81ms (next.js: 4ms, generate-params: 0.0ms, application-code: 77ms)
+ GET /en/assistant/builder 200 in 82ms (next.js: 5ms, generate-params: 0.0ms, application-code: 77ms)
+ GET /en/assistant/builder 200 in 88ms (next.js: 3ms, generate-params: 0.0ms, application-code: 84ms)
+ GET /en/assistant/builder 200 in 95ms (next.js: 4ms, generate-params: 5ms, application-code: 86ms)
+ GET /en/assistant/builder 200 in 91ms (next.js: 4ms, generate-params: 0.0ms, application-code: 87ms)
+ GET /en/assistant/builder 200 in 81ms (next.js: 3ms, generate-params: 0.0ms, application-code: 78ms)
+ GET /en/assistant/builder 200 in 82ms (next.js: 4ms, generate-params: 0.0ms, application-code: 78ms)
+ GET /en/assistant/builder 200 in 94ms (next.js: 4ms, generate-params: 0.0ms, application-code: 90ms)
+ GET /en/assistant/builder 200 in 89ms (next.js: 3ms, generate-params: 0.0ms, application-code: 85ms)
+ GET /en/assistant/builder 200 in 83ms (next.js: 4ms, generate-params: 0.0ms, application-code: 79ms)
+ GET /en/assistant/builder 200 in 79ms (next.js: 5ms, generate-params: 0.0ms, application-code: 74ms)
+ GET /en/assistant/builder 200 in 73ms (next.js: 4ms, generate-params: 0.0ms, application-code: 70ms)
+ GET /en/assistant/builder 200 in 84ms (next.js: 3ms, generate-params: 0.0ms, application-code: 81ms)
+ GET /en/assistant/builder 200 in 94ms (next.js: 5ms, generate-params: 0.1ms, application-code: 88ms)
+ GET /en/assistant/builder 200 in 94ms (next.js: 4ms, generate-params: 0.0ms, application-code: 89ms)
+ GET /en/assistant/builder 200 in 97ms (next.js: 4ms, generate-params: 0.0ms, application-code: 93ms)
+ GET /en/assistant/builder 200 in 52ms (next.js: 4ms, generate-params: 5ms, application-code: 43ms)
+ GET /en/assistant/builder 200 in 214ms (next.js: 72ms, generate-params: 6ms, application-code: 137ms)
+ GET /en/assistant/builder 200 in 110ms (next.js: 5ms, generate-params: 0.0ms, application-code: 105ms)
+ GET /en/assistant/builder 200 in 103ms (next.js: 4ms, generate-params: 0.0ms, application-code: 99ms)
+ GET /en/assistant/builder 200 in 99ms (next.js: 5ms, generate-params: 0.1ms, application-code: 93ms)
+ GET /en/assistant/builder 200 in 85ms (next.js: 4ms, generate-params: 0.0ms, application-code: 81ms)
+ GET /en/assistant/builder 200 in 86ms (next.js: 4ms, generate-params: 0.0ms, application-code: 82ms)
+ GET /en/assistant/builder 200 in 96ms (next.js: 4ms, generate-params: 0.0ms, application-code: 92ms)
+ GET /en/assistant/builder 200 in 108ms (next.js: 11ms, generate-params: 0.0ms, application-code: 97ms)
+ GET /en/assistant/builder 200 in 143ms (next.js: 4ms, generate-params: 0.0ms, application-code: 138ms)
+ GET /en/assistant/builder 200 in 119ms (next.js: 5ms, generate-params: 0.0ms, application-code: 114ms)
+ GET /en/assistant/builder 200 in 90ms (next.js: 5ms, generate-params: 0.0ms, application-code: 85ms)
+ GET /en/assistant/builder 200 in 88ms (next.js: 3ms, generate-params: 6ms, application-code: 79ms)
+ GET /en/assistant/builder 200 in 83ms (next.js: 3ms, generate-params: 0.0ms, application-code: 80ms)
+ GET /en/assistant/builder 200 in 78ms (next.js: 3ms, generate-params: 0.0ms, application-code: 75ms)
+ GET /en/assistant/builder 200 in 83ms (next.js: 4ms, generate-params: 0.0ms, application-code: 79ms)
+ GET /en/assistant/builder 200 in 92ms (next.js: 6ms, generate-params: 0.0ms, application-code: 86ms)
+ GET /en/assistant/builder 200 in 93ms (next.js: 3ms, generate-params: 0.0ms, application-code: 90ms)
+ GET /en/assistant/builder 200 in 82ms (next.js: 4ms, generate-params: 0.0ms, application-code: 78ms)
+ GET /en/assistant/builder 200 in 82ms (next.js: 3ms, generate-params: 0.0ms, application-code: 79ms)
+ GET /en/assistant/builder 200 in 81ms (next.js: 4ms, generate-params: 0.0ms, application-code: 77ms)
+ GET /en/assistant/builder 200 in 76ms (next.js: 3ms, generate-params: 0.0ms, application-code: 72ms)
+ GET /en/assistant/builder 200 in 41ms (next.js: 4ms, generate-params: 0.0ms, application-code: 37ms)
+ GET /en/assistant/builder 200 in 158ms (next.js: 42ms, generate-params: 10ms, application-code: 106ms)
+ GET /en/assistant/builder 200 in 90ms (next.js: 4ms, generate-params: 0.0ms, application-code: 86ms)
+ GET /en/assistant/builder 200 in 90ms (next.js: 5ms, generate-params: 0.0ms, application-code: 84ms)
+ GET /en/assistant/builder 200 in 96ms (next.js: 4ms, generate-params: 0.0ms, application-code: 92ms)
+ GET /en/assistant/builder 200 in 100ms (next.js: 4ms, generate-params: 0.0ms, application-code: 96ms)
+ GET /en/assistant/builder 200 in 118ms (next.js: 4ms, generate-params: 0.1ms, application-code: 114ms)
+ GET /en/assistant/builder 200 in 111ms (next.js: 10ms, generate-params: 0.0ms, application-code: 101ms)
+ GET /en/assistant/builder 200 in 84ms (next.js: 3ms, generate-params: 0.0ms, application-code: 81ms)
+ GET /en/assistant/builder 200 in 78ms (next.js: 5ms, generate-params: 0.0ms, application-code: 73ms)
+ GET /en/assistant/builder 200 in 77ms (next.js: 4ms, generate-params: 0.1ms, application-code: 72ms)
+ GET /en/assistant/builder 200 in 81ms (next.js: 4ms, generate-params: 0.0ms, application-code: 77ms)
+ GET /en/assistant/builder 200 in 89ms (next.js: 5ms, generate-params: 0.0ms, application-code: 83ms)
+ GET /en/assistant/builder 200 in 101ms (next.js: 3ms, generate-params: 0.0ms, application-code: 98ms)
+ GET /en/assistant/builder 200 in 107ms (next.js: 3ms, generate-params: 0.0ms, application-code: 104ms)
+ GET /en/assistant/builder 200 in 89ms (next.js: 6ms, generate-params: 6ms, application-code: 77ms)
+ GET /en/assistant/builder 200 in 82ms (next.js: 4ms, generate-params: 0.0ms, application-code: 79ms)
+ GET /en/assistant/builder 200 in 86ms (next.js: 4ms, generate-params: 0.0ms, application-code: 82ms)
+ GET /en/assistant/builder 200 in 83ms (next.js: 5ms, generate-params: 0.0ms, application-code: 78ms)
+ GET /en/assistant/builder 200 in 79ms (next.js: 3ms, generate-params: 0.0ms, application-code: 76ms)
+ GET /en/assistant/builder 200 in 86ms (next.js: 5ms, generate-params: 0.0ms, application-code: 81ms)
+ GET /en/assistant/builder 200 in 86ms (next.js: 3ms, generate-params: 0.0ms, application-code: 83ms)
+ GET /en/assistant/builder 200 in 78ms (next.js: 5ms, generate-params: 0.0ms, application-code: 74ms)
+ GET /en/assistant/builder 200 in 38ms (next.js: 3ms, generate-params: 0.0ms, application-code: 35ms)
+ GET /en/assistant/builder 200 in 224ms (next.js: 90ms, generate-params: 8ms, application-code: 126ms)
+ GET /en/assistant/builder 200 in 98ms (next.js: 4ms, generate-params: 0.0ms, application-code: 94ms)
+ GET /en/assistant/builder 200 in 91ms (next.js: 19ms, generate-params: 0.0ms, application-code: 73ms)
+ GET /en/assistant/builder 200 in 80ms (next.js: 3ms, generate-params: 0.0ms, application-code: 77ms)
+ GET /en/assistant/builder 200 in 89ms (next.js: 4ms, generate-params: 0.0ms, application-code: 85ms)
+ GET /en/assistant/builder 200 in 83ms (next.js: 4ms, generate-params: 0.0ms, application-code: 79ms)
+ GET /en/assistant/builder 200 in 74ms (next.js: 4ms, generate-params: 0.0ms, application-code: 70ms)
+ GET /en/assistant/builder 200 in 73ms (next.js: 4ms, generate-params: 0.0ms, application-code: 69ms)
+ GET /en/assistant/builder 200 in 77ms (next.js: 3ms, generate-params: 0.0ms, application-code: 74ms)
+ GET /en/assistant/builder 200 in 79ms (next.js: 5ms, generate-params: 0.0ms, application-code: 75ms)
+ GET /en/assistant/builder 200 in 79ms (next.js: 3ms, generate-params: 0.0ms, application-code: 76ms)
+ GET /en/assistant/builder 200 in 94ms (next.js: 4ms, generate-params: 0.0ms, application-code: 90ms)
+ GET /en/assistant/builder 200 in 94ms (next.js: 4ms, generate-params: 6ms, application-code: 83ms)
+ GET /en/assistant/builder 200 in 101ms (next.js: 3ms, generate-params: 0.0ms, application-code: 97ms)
+ GET /en/assistant/builder 200 in 114ms (next.js: 5ms, generate-params: 0.0ms, application-code: 109ms)
+ GET /en/assistant/builder 200 in 100ms (next.js: 5ms, generate-params: 0.0ms, application-code: 94ms)
+ GET /en/assistant/builder 200 in 91ms (next.js: 5ms, generate-params: 0.0ms, application-code: 86ms)
+ GET /en/assistant/builder 200 in 88ms (next.js: 5ms, generate-params: 0.0ms, application-code: 83ms)
+ GET /en/assistant/builder 200 in 85ms (next.js: 3ms, generate-params: 0.0ms, application-code: 81ms)
+ GET /en/assistant/builder 200 in 79ms (next.js: 3ms, generate-params: 0.0ms, application-code: 76ms)
+ GET /en/assistant/builder 200 in 85ms (next.js: 3ms, generate-params: 0.0ms, application-code: 82ms)
+ GET /en/assistant/builder 200 in 86ms (next.js: 4ms, generate-params: 0.0ms, application-code: 82ms)
+ GET /en/assistant/builder 200 in 80ms (next.js: 4ms, generate-params: 0.0ms, application-code: 76ms)
+ GET /en/assistant/builder 200 in 85ms (next.js: 3ms, generate-params: 0.0ms, application-code: 82ms)
+ GET /en/assistant/builder 200 in 85ms (next.js: 4ms, generate-params: 0.0ms, application-code: 81ms)
+ GET /en/assistant/builder 200 in 43ms (next.js: 4ms, generate-params: 7ms, application-code: 32ms)
+ GET /en/assistant/builder 200 in 185ms (next.js: 93ms, generate-params: 5ms, application-code: 86ms)
+ GET /en/assistant/builder 200 in 95ms (next.js: 4ms, generate-params: 0.0ms, application-code: 91ms)
+ GET /en/assistant/builder 200 in 102ms (next.js: 4ms, generate-params: 0.0ms, application-code: 97ms)
+ GET /en/assistant/builder 200 in 88ms (next.js: 3ms, generate-params: 0.0ms, application-code: 84ms)
+ GET /en/assistant/builder 200 in 114ms (next.js: 3ms, generate-params: 0.0ms, application-code: 111ms)
+ GET /en/assistant/builder 200 in 110ms (next.js: 4ms, generate-params: 0.0ms, application-code: 105ms)
+ GET /en/assistant/builder 200 in 91ms (next.js: 6ms, generate-params: 0.0ms, application-code: 86ms)
+ GET /en/assistant/builder 200 in 99ms (next.js: 5ms, generate-params: 0.0ms, application-code: 94ms)
+ GET /en/assistant/builder 200 in 85ms (next.js: 6ms, generate-params: 0.0ms, application-code: 79ms)
+ GET /en/assistant/builder 200 in 80ms (next.js: 3ms, generate-params: 0.0ms, application-code: 77ms)
+ GET /en/assistant/builder 200 in 95ms (next.js: 7ms, generate-params: 0.0ms, application-code: 88ms)
+ GET /en/assistant/builder 200 in 91ms (next.js: 5ms, generate-params: 0.0ms, application-code: 86ms)
+ GET /en/assistant/builder 200 in 90ms (next.js: 5ms, generate-params: 6ms, application-code: 79ms)
+ GET /en/assistant/builder 200 in 86ms (next.js: 5ms, generate-params: 0.0ms, application-code: 81ms)
+ GET /en/assistant/builder 200 in 85ms (next.js: 3ms, generate-params: 0.0ms, application-code: 82ms)
+ GET /en/assistant/builder 200 in 92ms (next.js: 3ms, generate-params: 0.0ms, application-code: 88ms)
+ GET /en/assistant/builder 200 in 95ms (next.js: 4ms, generate-params: 0.0ms, application-code: 91ms)
+ GET /en/assistant/builder 200 in 94ms (next.js: 3ms, generate-params: 0.0ms, application-code: 90ms)
+ GET /en/assistant/builder 200 in 85ms (next.js: 5ms, generate-params: 0.0ms, application-code: 80ms)
+ GET /en/assistant/builder 200 in 79ms (next.js: 3ms, generate-params: 0.0ms, application-code: 75ms)
+ GET /en/assistant/builder 200 in 79ms (next.js: 3ms, generate-params: 0.0ms, application-code: 76ms)
+ GET /en/assistant/builder 200 in 83ms (next.js: 3ms, generate-params: 0.0ms, application-code: 80ms)
+ GET /en/assistant/builder 200 in 90ms (next.js: 4ms, generate-params: 0.0ms, application-code: 86ms)
+ GET /en/assistant/builder 200 in 97ms (next.js: 5ms, generate-params: 0.0ms, application-code: 93ms)
+ GET /en/assistant/builder 200 in 98ms (next.js: 8ms, generate-params: 6ms, application-code: 84ms)
+ GET /en/assistant/builder 200 in 93ms (next.js: 5ms, generate-params: 0.0ms, application-code: 88ms)
+ GET /en/assistant/builder 200 in 78ms (next.js: 3ms, generate-params: 0.0ms, application-code: 74ms)
+ GET /en/assistant/builder 200 in 36ms (next.js: 4ms, generate-params: 0.0ms, application-code: 32ms)
+ GET /en/assistant/builder 200 in 80ms (next.js: 13ms, generate-params: 6ms, application-code: 61ms)
+✓ Compiled in 94ms
+ GET /en/assistant/builder 200 in 242ms (next.js: 89ms, generate-params: 5ms, application-code: 148ms)
+ GET /en/assistant/builder 200 in 129ms (next.js: 10ms, generate-params: 0.0ms, application-code: 120ms)
+ GET /en/assistant/builder 200 in 94ms (next.js: 5ms, generate-params: 0.0ms, application-code: 89ms)
+ GET /en/assistant/builder 200 in 93ms (next.js: 3ms, generate-params: 0.0ms, application-code: 89ms)
+ GET /en/assistant/builder 200 in 83ms (next.js: 4ms, generate-params: 0.0ms, application-code: 79ms)
+ GET /en/assistant/builder 200 in 82ms (next.js: 5ms, generate-params: 0.0ms, application-code: 77ms)
+ GET /en/assistant/builder 200 in 76ms (next.js: 3ms, generate-params: 0.0ms, application-code: 72ms)
+ GET /en/assistant/builder 200 in 81ms (next.js: 6ms, generate-params: 0.0ms, application-code: 75ms)
+ GET /en/assistant/builder 200 in 86ms (next.js: 3ms, generate-params: 0.0ms, application-code: 83ms)
+ GET /en/assistant/builder 200 in 83ms (next.js: 6ms, generate-params: 0.0ms, application-code: 77ms)
+ GET /en/assistant/builder 200 in 87ms (next.js: 3ms, generate-params: 0.1ms, application-code: 84ms)
+ GET /en/assistant/builder 200 in 90ms (next.js: 4ms, generate-params: 0.0ms, application-code: 86ms)
+ GET /en/assistant/builder 200 in 78ms (next.js: 4ms, generate-params: 5ms, application-code: 68ms)
+ GET /en/assistant/builder 200 in 77ms (next.js: 3ms, generate-params: 0.0ms, application-code: 73ms)
+ GET /en/assistant/builder 200 in 97ms (next.js: 4ms, generate-params: 0.0ms, application-code: 93ms)
+ GET /en/assistant/builder 200 in 102ms (next.js: 4ms, generate-params: 0.0ms, application-code: 97ms)
+ GET /en/assistant/builder 200 in 94ms (next.js: 5ms, generate-params: 0.0ms, application-code: 89ms)
+ GET /en/assistant/builder 200 in 91ms (next.js: 5ms, generate-params: 0.0ms, application-code: 86ms)
+ GET /en/assistant/builder 200 in 82ms (next.js: 3ms, generate-params: 0.0ms, application-code: 78ms)
+ GET /en/assistant/builder 200 in 87ms (next.js: 4ms, generate-params: 0.0ms, application-code: 82ms)
+ GET /en/assistant/builder 200 in 88ms (next.js: 4ms, generate-params: 0.0ms, application-code: 84ms)
+ GET /en/assistant/builder 200 in 84ms (next.js: 5ms, generate-params: 0.0ms, application-code: 79ms)
+ GET /en/assistant/builder 200 in 79ms (next.js: 5ms, generate-params: 0.0ms, application-code: 74ms)
+ GET /en/assistant/builder 200 in 77ms (next.js: 4ms, generate-params: 0.0ms, application-code: 73ms)
+ GET /en/assistant/builder 200 in 86ms (next.js: 4ms, generate-params: 0.0ms, application-code: 82ms)
+ GET /en/assistant/builder 200 in 88ms (next.js: 4ms, generate-params: 5ms, application-code: 79ms)
+ GET /en/assistant/builder 200 in 95ms (next.js: 4ms, generate-params: 0.0ms, application-code: 91ms)
+ GET /en/assistant/builder 200 in 92ms (next.js: 3ms, generate-params: 0.0ms, application-code: 88ms)
+ GET /en/assistant/builder 200 in 94ms (next.js: 3ms, generate-params: 0.0ms, application-code: 91ms)
+ GET /en/assistant/builder 200 in 88ms (next.js: 5ms, generate-params: 0.1ms, application-code: 82ms)
+ GET /en/assistant/builder 200 in 43ms (next.js: 6ms, generate-params: 0.0ms, application-code: 37ms)
+✓ Compiled in 203ms
+ GET /en/assistant/builder 200 in 59ms (next.js: 14ms, generate-params: 6ms, application-code: 40ms)
+✓ Compiled in 69ms
+ GET /en/assistant/builder 200 in 77ms (next.js: 11ms, generate-params: 8ms, application-code: 57ms)
+ GET /en/assistant/builder 200 in 135ms (next.js: 12ms, generate-params: 5ms, application-code: 118ms)
+ GET /en/assistant/builder 200 in 62ms (next.js: 7ms, generate-params: 0.0ms, application-code: 55ms)
+✓ Compiled in 66ms
+ GET /en/assistant/builder 200 in 60ms (next.js: 11ms, generate-params: 6ms, application-code: 42ms)
+✓ Compiled in 53ms
+ GET /en/assistant/builder 200 in 67ms (next.js: 10ms, generate-params: 7ms, application-code: 50ms)
+✓ Compiled in 67ms
+ GET /en/assistant/builder 200 in 70ms (next.js: 11ms, generate-params: 8ms, application-code: 52ms)
+✓ Compiled in 79ms
+ GET /en/assistant/builder 200 in 65ms (next.js: 11ms, generate-params: 5ms, application-code: 49ms)
+✓ Compiled in 76ms
+ GET /en/assistant/builder 200 in 73ms (next.js: 10ms, generate-params: 9ms, application-code: 54ms)
+✓ Compiled in 77ms
+ GET /en/assistant/builder 200 in 69ms (next.js: 11ms, generate-params: 6ms, application-code: 53ms)
+✓ Compiled in 123ms
+ GET /en/assistant/builder 200 in 193ms (next.js: 88ms, generate-params: 5ms, application-code: 100ms)
+ GET /en/assistant/builder 200 in 89ms (next.js: 3ms, generate-params: 0.0ms, application-code: 86ms)
+ GET /en/assistant/builder 200 in 139ms (next.js: 4ms, generate-params: 0.0ms, application-code: 136ms)
+ GET /en/assistant/builder 200 in 133ms (next.js: 5ms, generate-params: 0.0ms, application-code: 128ms)
+ GET /en/assistant/builder 200 in 87ms (next.js: 5ms, generate-params: 0.0ms, application-code: 81ms)
+ GET /en/assistant/builder 200 in 86ms (next.js: 4ms, generate-params: 0.0ms, application-code: 82ms)
+ GET /en/assistant/builder 200 in 83ms (next.js: 4ms, generate-params: 0.0ms, application-code: 79ms)
+ GET /en/assistant/builder 200 in 79ms (next.js: 4ms, generate-params: 0.0ms, application-code: 75ms)
+ GET /en/assistant/builder 200 in 80ms (next.js: 3ms, generate-params: 0.0ms, application-code: 77ms)
+ GET /en/assistant/builder 200 in 85ms (next.js: 5ms, generate-params: 0.0ms, application-code: 80ms)
+ GET /en/assistant/builder 200 in 86ms (next.js: 3ms, generate-params: 0.0ms, application-code: 82ms)
+ GET /en/assistant/builder 200 in 90ms (next.js: 3ms, generate-params: 0.0ms, application-code: 87ms)
+ GET /en/assistant/builder 200 in 90ms (next.js: 4ms, generate-params: 6ms, application-code: 80ms)
+ GET /en/assistant/builder 200 in 81ms (next.js: 4ms, generate-params: 0.0ms, application-code: 78ms)
+ GET /en/assistant/builder 200 in 76ms (next.js: 3ms, generate-params: 0.0ms, application-code: 73ms)
+ GET /en/assistant/builder 200 in 95ms (next.js: 3ms, generate-params: 0.0ms, application-code: 92ms)
+ GET /en/assistant/builder 200 in 97ms (next.js: 4ms, generate-params: 0.0ms, application-code: 93ms)
+ GET /en/assistant/builder 200 in 73ms (next.js: 4ms, generate-params: 0.0ms, application-code: 69ms)
+ GET /en/assistant/builder 200 in 78ms (next.js: 3ms, generate-params: 0.0ms, application-code: 74ms)
+ GET /en/assistant/builder 200 in 86ms (next.js: 4ms, generate-params: 0.0ms, application-code: 82ms)
+ GET /en/assistant/builder 200 in 91ms (next.js: 4ms, generate-params: 0.0ms, application-code: 87ms)
+ GET /en/assistant/builder 200 in 96ms (next.js: 5ms, generate-params: 0.0ms, application-code: 91ms)
+ GET /en/assistant/builder 200 in 95ms (next.js: 4ms, generate-params: 0.0ms, application-code: 91ms)
+ GET /en/assistant/builder 200 in 106ms (next.js: 4ms, generate-params: 0.0ms, application-code: 102ms)
+ GET /en/assistant/builder 200 in 105ms (next.js: 4ms, generate-params: 7ms, application-code: 94ms)
+ GET /en/assistant/builder 200 in 125ms (next.js: 6ms, generate-params: 0.0ms, application-code: 118ms)
+ GET /en/assistant/builder 200 in 113ms (next.js: 5ms, generate-params: 0.0ms, application-code: 108ms)
+ GET /en/assistant/builder 200 in 78ms (next.js: 3ms, generate-params: 0.0ms, application-code: 75ms)
+ GET /en/assistant/builder 200 in 78ms (next.js: 4ms, generate-params: 0.0ms, application-code: 75ms)
+ GET /en/assistant/builder 200 in 97ms (next.js: 4ms, generate-params: 0.0ms, application-code: 93ms)
+ GET /en/assistant/builder 200 in 98ms (next.js: 5ms, generate-params: 0.0ms, application-code: 93ms)
+ GET /en/assistant/builder 200 in 80ms (next.js: 5ms, generate-params: 0.0ms, application-code: 75ms)
+ GET /en/assistant/builder 200 in 43ms (next.js: 4ms, generate-params: 0.0ms, application-code: 39ms)
+ GET /api/providers 503 in 3.9s (next.js: 487ms, application-code: 3.4s)
+ POST /api/providers 400 in 96ms (next.js: 2ms, application-code: 94ms)
+ POST /api/providers 503 in 155ms (next.js: 3ms, application-code: 152ms)
+Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src\app\[locale]\(app)\settings\page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> {
+  code: 'INVALID_MESSAGE',
+  originalMessage: 'INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)'
+}
+ GET /en/settings 200 in 1747ms (next.js: 1010ms, generate-params: 473ms, application-code: 263ms)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+ GET /api/providers 503 in 282ms (next.js: 5ms, application-code: 277ms)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+ GET /api/providers 503 in 161ms (next.js: 10ms, application-code: 152ms)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+ GET /en/security 200 in 1015ms (next.js: 460ms, generate-params: 480ms, application-code: 75ms)
+ GET /en/assistant/builder 200 in 101ms (next.js: 8ms, generate-params: 5ms, application-code: 88ms)
+ POST /api/generate 503 in 440ms (next.js: 270ms, application-code: 171ms)
+ GET /zh/security 200 in 83ms (next.js: 4ms, generate-params: 6ms, application-code: 73ms)
+✓ Compiled in 58ms
+ GET /en/assistant/builder 200 in 78ms (next.js: 12ms, generate-params: 9ms, application-code: 57ms)
+Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src\app\[locale]\(app)\settings\page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> {
+  code: 'INVALID_MESSAGE',
+  originalMessage: 'INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)'
+}
+ GET /en/settings 200 in 97ms (next.js: 4ms, generate-params: 5ms, application-code: 88ms)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+ GET /api/providers 503 in 275ms (next.js: 4ms, application-code: 271ms)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+ GET /api/providers 503 in 160ms (next.js: 6ms, application-code: 154ms)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+ GET /en/security 200 in 91ms (next.js: 3ms, generate-params: 5ms, application-code: 83ms)
+ GET /en/assistant/builder 200 in 101ms (next.js: 3ms, generate-params: 6ms, application-code: 92ms)
+ GET /en/assistant/builder 200 in 155ms (next.js: 27ms, generate-params: 8ms, application-code: 120ms)
+ GET /en/assistant/builder 200 in 61ms (next.js: 5ms, generate-params: 0.0ms, application-code: 56ms)
+Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src\app\[locale]\(app)\settings\page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> {
+  code: 'INVALID_MESSAGE',
+  originalMessage: 'INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)'
+}
+ GET /en/settings 200 in 99ms (next.js: 8ms, generate-params: 7ms, application-code: 84ms)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+ GET /api/providers 503 in 282ms (next.js: 3ms, application-code: 279ms)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+ GET /api/providers 503 in 145ms (next.js: 8ms, application-code: 136ms)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+[browser] Error: INVALID_MESSAGE: INVALID_ARGUMENT_TYPE (Upload a providers.json — array of { name, model, apiKey, endpoint }.)
+    at SettingsPage (src/app/[locale]/(app)/settings/page.tsx:347:20)
+  345 |                 </Button>
+  346 |                 <p className="mt-2 font-mono text-[10px] leading-relaxed text-muted-foreground">
+> 347 |                   {t('json.importHint')}
+      |                    ^
+  348 |                 </p>
+  349 |               </div>
+  350 |               <div> (src/app/[locale]/(app)
+ GET /en/assistant/builder 200 in 92ms (next.js: 2ms, generate-params: 5ms, application-code: 85ms)
+ POST /api/generate 503 in 134ms (next.js: 3ms, application-code: 132ms)

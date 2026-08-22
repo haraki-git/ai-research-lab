@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --background: 42 15% 95%;
+    --foreground: 222 14% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 14% 12%;
+    --primary: 228 70% 46%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 42 14% 90%;
+    --secondary-foreground: 222 14% 12%;
+    --accent: 42 14% 90%;
+    --accent-foreground: 222 14% 12%;
+    --muted: 42 12% 91%;
+    --muted-foreground: 220 6% 40%;
+    --destructive: 0 74% 52%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 152 62% 34%;
+    --warning: 38 92% 45%;
+    --border: 42 12% 86%;
+    --input: 42 12% 84%;
+    --ring: 228 70% 46%;
+  }
+
+  .dark {
+    color-scheme: dark;
+    --background: 225 14% 8%;
+    --foreground: 220 12% 92%;
+    --card: 225 12% 11%;
+    --card-foreground: 220 12% 92%;
+    --primary: 228 74% 66%;
+    --primary-foreground: 225 14% 8%;
+    --secondary: 225 12% 15%;
+    --secondary-foreground: 220 12% 92%;
+    --accent: 225 12% 15%;
+    --accent-foreground: 220 12% 92%;
+    --muted: 225 12% 14%;
+    --muted-foreground: 220 8% 62%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 152 62% 46%;
+    --warning: 38 94% 55%;
+    --border: 225 12% 20%;
+    --input: 225 12% 22%;
+    --ring: 228 74% 66%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  select option {
+    background-color: hsl(var(--card));
+    color: hsl(var(--foreground));
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.18);
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2;
+  }
+
+  .btn-outline {
+    @apply btn border border-border bg-card hover:bg-secondary h-10 px-4 py-2;
+  }
+
+  .btn-ghost {
+    @apply btn hover:bg-secondary h-10 px-4 py-2;
+  }
+
+  .btn-sm {
+    @apply h-8 px-3 text-xs;
+  }
+
+  .input {
+    @apply flex h-10 w-full rounded-md border border-input bg-card px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .card {
+    @apply rounded-md border border-border bg-card text-card-foreground;
+  }
+
+  /* Instrument world: mono micro-label */
+  .mono-label {
+    @apply font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-muted-foreground;
+  }
+
+  /* Faint engineering grid for section backdrops */
+  .grid-paper {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.35) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.35) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  .grid-paper-fine {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.25) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.25) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+
+  /* Panel power-on */
+  @keyframes instrument-in {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .instrument-in {
+    animation: instrument-in 0.32s ease-out both;
+  }
+
+  /* Status pulse */
+  @keyframes status-pulse {
+    0%, 100% {
+      box-shadow: 0 0 0 0 hsl(var(--success) / 0.45);
+    }
+    50% {
+      box-shadow: 0 0 0 4px hsl(var(--success) / 0);
+    }
+  }
+
+  .status-dot {
+    border-radius: 9999px;
+    animation: status-pulse 2.4s ease-in-out infinite;
+  }
+
+  /* Instrument scrollbar: slim, hairline, quiet */
+  .mono-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+
+  .mono-scroll::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .mono-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .mono-scroll::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 9999px;
+  }
+
+  .mono-scroll::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.6);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .instrument-in,
+    .status-dot {
+      animation: none;
+    }
+    * {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

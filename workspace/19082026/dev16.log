@@ -1,0 +1,14 @@
+npm notice run ai-research-lab@0.1.0 dev
+npm notice run node scripts/dev.mjs
+[dev] Starting Next.js on port 3000...
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 493ms
+✓ Running next.config.mjs took 60ms
+
+ GET / 307 in 595ms (next.js: 326ms, application-code: 269ms)
+ GET /dashboard 307 in 877ms (next.js: 61ms, generate-params: 583ms, application-code: 233ms)
+ GET /en 200 in 152ms (next.js: 5ms, generate-params: 7ms, application-code: 139ms)
+[?25h

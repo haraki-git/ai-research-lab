@@ -1,0 +1,8 @@
+npm notice run ai-research-lab@0.1.0 start
+npm notice run next start
+▲ Next.js 16.3.1
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+✓ Ready in 514ms
+✓ Running next.config.mjs took 67ms
+[middleware] module loaded

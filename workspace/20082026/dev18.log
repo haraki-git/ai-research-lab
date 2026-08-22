@@ -1,0 +1,20 @@
+npm notice run ai-research-lab@0.1.0 dev
+npm notice run node scripts/dev.mjs
+[dev] Killed existing process 856 on port 3000
+[dev] Starting Next.js on port 3000...
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 686ms
+✓ Running next.config.mjs took 71ms
+⚠ Turbopack's filesystem cache has been deleted because we previously detected an internal error in Turbopack. Builds or page loads may be slower as a result.
+
+ GET / 307 in 2.6s (next.js: 2.5s, application-code: 164ms)
+ GET /dashboard 307 in 1292ms (next.js: 600ms, generate-params: 538ms, application-code: 154ms)
+ GET /en/dashboard 200 in 1042ms (next.js: 353ms, generate-params: 546ms, application-code: 143ms)
+ GET /id/library 200 in 1180ms (next.js: 397ms, generate-params: 677ms, application-code: 106ms)
+ GET /zh/research/experiments 200 in 1202ms (next.js: 510ms, generate-params: 607ms, application-code: 86ms)
+ GET /en/dashboard 200 in 87ms (next.js: 7ms, generate-params: 6ms, application-code: 74ms)
+ GET /en 200 in 103ms (next.js: 7ms, generate-params: 6ms, application-code: 90ms)
+[?25h

@@ -1,0 +1,15 @@
+npm notice run ai-research-lab@0.1.0 dev
+npm notice run next dev
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 525ms
+✓ Running next.config.mjs took 65ms
+
+ GET / 307 in 3.1s (next.js: 2.9s, application-code: 205ms)
+ GET /dashboard 307 in 1641ms (next.js: 858ms, generate-params: 580ms, application-code: 202ms)
+ GET /en/dashboard 200 in 1277ms (next.js: 466ms, generate-params: 652ms, application-code: 159ms)
+ GET /id 200 in 120ms (next.js: 3ms, generate-params: 6ms, application-code: 110ms)
+ GET /dashboard 307 in 110ms (next.js: 7ms, generate-params: 8ms, application-code: 95ms)
+[?25h
