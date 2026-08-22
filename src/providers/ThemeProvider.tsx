@@ -1,17 +1,75 @@
 'use client'
 
-import { ThemeProvider as NextThemesProvider } from 'next-themes'
-import dynamic from 'next/dynamic'
+import { createContext, useCallback, useContext, useEffect, useState } from 'react'
 
-const DynamicThemeProvider = dynamic(
-  () => import('next-themes').then((mod) => mod.ThemeProvider),
-  { ssr: false },
-)
+type Theme = 'light' | 'dark' | 'system'
 
-export default function ThemeProvider({ children, ...props }: React.ComponentProps<typeof NextThemesProvider>) {
+interface ThemeContextValue {
+  theme: Theme
+  resolvedTheme: 'light' | 'dark'
+  setTheme: (t: Theme) => void
+}
+
+const ThemeContext = createContext<ThemeContextValue>({
+  theme: 'system',
+  resolvedTheme: 'light',
+  setTheme: () => {},
+})
+
+export function useTheme() {
+  return useContext(ThemeContext)
+}
+
+function getSystemTheme(): 'light' | 'dark' {
+  if (typeof window === 'undefined') return 'light'
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
+
+function applyTheme(resolved: 'light' | 'dark') {
+  const root = document.documentElement
+  if (resolved === 'dark') {
+    root.classList.add('dark')
+  } else {
+    root.classList.remove('dark')
+  }
+}
+
+export default function ThemeProvider({ children }: { children: React.ReactNode }) {
+  const [theme, setThemeState] = useState<Theme>('system')
+  const [resolvedTheme, setResolved] = useState<'light' | 'dark'>(() => getSystemTheme())
+
+  useEffect(() => {
+    const stored = localStorage.getItem('theme') as Theme | null
+    const initial = stored || 'system'
+    setThemeState(initial)
+    const resolved = initial === 'system' ? getSystemTheme() : initial
+    setResolved(resolved)
+    applyTheme(resolved)
+  }, [])
+
+  useEffect(() => {
+    if (theme !== 'system') return
+    const mq = window.matchMedia('(prefers-color-scheme: dark)')
+    const handler = () => {
+      const r = mq.matches ? 'dark' : 'light'
+      setResolved(r)
+      applyTheme(r)
+    }
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [theme])
+
+  const setTheme = useCallback((t: Theme) => {
+    setThemeState(t)
+    localStorage.setItem('theme', t)
+    const r = t === 'system' ? getSystemTheme() : t
+    setResolved(r)
+    applyTheme(r)
+  }, [])
+
   return (
-    <DynamicThemeProvider attribute="class" defaultTheme="system" enableSystem {...props}>
+    <ThemeContext.Provider value={{ theme, resolvedTheme, setTheme }}>
       {children}
-    </DynamicThemeProvider>
+    </ThemeContext.Provider>
   )
 }

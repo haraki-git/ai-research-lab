@@ -1,7 +1,7 @@
 'use client'
 
 import { Moon, Sun } from 'lucide-react'
-import { useTheme } from 'next-themes'
+import { useTheme } from '@/providers/ThemeProvider'
 import { useSyncExternalStore } from 'react'
 import { Button } from '@/components/ui/Button'
 
@@ -10,12 +10,12 @@ const getSnapshot = () => true
 const getServerSnapshot = () => false
 
 export function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
   const mounted = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 
   if (!mounted) return <Button variant="ghost" size="sm" className="w-9 px-0" aria-hidden />
 
-  const isDark = theme === 'dark'
+  const isDark = resolvedTheme === 'dark'
 
   return (
     <Button
