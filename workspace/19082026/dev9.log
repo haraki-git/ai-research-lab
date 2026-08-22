@@ -1,0 +1,55 @@
+npm notice run ai-research-lab@0.1.0 dev
+npm notice run next dev --webpack
+▲ Next.js 16.3.1 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 552ms
+✓ Running next.config.mjs took 66ms
+
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of C:\laragon\www\ai-research-lab\node_modules\next-intl\dist\esm\production\extractor\format\index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+○ Compiling /_not-found ...
+Warning: Your PostCSS configuration defines a field which is not supported (`__esModule`). Please remove this configuration value.
+⨯ src\app\layout.tsx
+An error occurred in `next/font`.
+
+Error: Your custom PostCSS configuration must export a `plugins` key.
+    at getPostCssPlugins (C:\laragon\www\ai-research-lab\node_modules\next\dist\build\webpack\config\blocks\css\plugins.js:114:37)
+    at async C:\laragon\www\ai-research-lab\node_modules\next\dist\build\webpack\config\blocks\css\index.js:125:36
+    at async C:\laragon\www\ai-research-lab\node_modules\next\dist\build\webpack\loaders\next-font-loader\index.js:100:33
+    at async Span.traceAsyncFn (C:\laragon\www\ai-research-lab\node_modules\next\dist\trace\trace.js:164:20)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of C:\laragon\www\ai-research-lab\node_modules\next-intl\dist\esm\production\extractor\format\index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\System Volume Information'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\swapfile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\System Volume Information'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\swapfile.sys'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of C:\laragon\www\ai-research-lab\node_modules\next-intl\dist\esm\production\extractor\format\index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\System Volume Information'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\swapfile.sys'
+⨯ src\app\layout.tsx
+An error occurred in `next/font`.
+
+Error: Your custom PostCSS configuration must export a `plugins` key.
+    at getPostCssPlugins (C:\laragon\www\ai-research-lab\node_modules\next\dist\build\webpack\config\blocks\css\plugins.js:114:37)
+    at async C:\laragon\www\ai-research-lab\node_modules\next\dist\build\webpack\config\blocks\css\index.js:125:36
+    at async C:\laragon\www\ai-research-lab\node_modules\next\dist\build\webpack\loaders\next-font-loader\index.js:100:33
+    at async Span.traceAsyncFn (C:\laragon\www\ai-research-lab\node_modules\next\dist\trace\trace.js:164:20)
+ GET / 500 in 15.6s (next.js: 15.3s, application-code: 290ms)
+⨯ src\app\layout.tsx
+An error occurred in `next/font`.
+
+Error: Your custom PostCSS configuration must export a `plugins` key.
+    at getPostCssPlugins (C:\laragon\www\ai-research-lab\node_modules\next\dist\build\webpack\config\blocks\css\plugins.js:114:37)
+    at async C:\laragon\www\ai-research-lab\node_modules\next\dist\build\webpack\config\blocks\css\index.js:125:36
+    at async C:\laragon\www\ai-research-lab\node_modules\next\dist\build\webpack\loaders\next-font-loader\index.js:100:33
+    at async Span.traceAsyncFn (C:\laragon\www\ai-research-lab\node_modules\next\dist\trace\trace.js:164:20)
+ GET /dashboard 500 in 1299ms (next.js: 1293ms, application-code: 6ms)

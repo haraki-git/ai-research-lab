@@ -1,0 +1,20 @@
+npm notice run ai-research-lab@0.1.0 dev
+npm notice run next dev --webpack
+▲ Next.js 16.3.1 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 753ms
+✓ Running next.config.mjs took 73ms
+
+○ Compiling / ...
+ GET / 307 in 3.7s (next.js: 3.5s, application-code: 187ms)
+ GET /dashboard 307 in 3.7s (next.js: 2.8s, generate-params: 619ms, application-code: 246ms)
+ GET /library 307 in 114ms (next.js: 6ms, generate-params: 8ms, application-code: 100ms)
+ GET /research/experiments 307 in 1168ms (next.js: 1044ms, application-code: 124ms)
+ GET /en/dashboard 200 in 1333ms (next.js: 552ms, generate-params: 616ms, application-code: 165ms)
+ GET /en 200 in 141ms (next.js: 7ms, generate-params: 6ms, application-code: 128ms)
+ GET /id 200 in 90ms (next.js: 3ms, generate-params: 0.0ms, application-code: 87ms)
+ GET /zh 200 in 122ms (next.js: 3ms, generate-params: 0.0ms, application-code: 120ms)
+ GET /id/dashboard 200 in 156ms (next.js: 4ms, generate-params: 9ms, application-code: 142ms)
+ GET /zh/library 200 in 1538ms (next.js: 715ms, generate-params: 624ms, application-code: 199ms)

@@ -1,0 +1,32 @@
+npm notice run ai-research-lab@0.1.0 dev
+npm notice run next dev
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 909ms
+✓ Running next.config.mjs took 188ms
+⚠ Slow filesystem detected. The benchmark took 412ms. If \\?\C:\laragon\www\ai-research-lab\.next\dev is a network drive, consider moving it to a local folder.
+See more: https://nextjs.org/docs/app/guides/local-development
+
+(node:11648) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/laragon/www/ai-research-lab/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\laragon\www\ai-research-lab\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ GET / 404 in 3.5s (next.js: 2.7s, application-code: 840ms)
+(node:16532) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/laragon/www/ai-research-lab/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\laragon\www\ai-research-lab\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ GET /en 200 in 2.7s (next.js: 1871ms, generate-params: 556ms, application-code: 275ms)
+ GET /en/dashboard 200 in 1379ms (next.js: 626ms, generate-params: 591ms, application-code: 162ms)
+ GET /en/library 200 in 1213ms (next.js: 511ms, generate-params: 586ms, application-code: 116ms)
+ GET /id 200 in 133ms (next.js: 5ms, generate-params: 10ms, application-code: 119ms)
+ GET /zh 200 in 116ms (next.js: 4ms, generate-params: 0.1ms, application-code: 111ms)
+ GET / 404 in 187ms (next.js: 11ms, application-code: 176ms)
+ GET / 404 in 43ms (next.js: 6ms, application-code: 37ms)
+ GET /dashboard 404 in 141ms (next.js: 8ms, generate-params: 10ms, application-code: 124ms)
+ GET /en 200 in 140ms (next.js: 5ms, generate-params: 0.1ms, application-code: 135ms)
+ GET /dashboard 404 in 142ms (next.js: 5ms, generate-params: 8ms, application-code: 130ms)
+
+C:\laragon\www\ai-research-lab>

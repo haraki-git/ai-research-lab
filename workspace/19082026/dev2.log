@@ -1,0 +1,16 @@
+npm notice run ai-research-lab@0.1.0 dev
+npm notice run next dev
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 574ms
+✓ Running next.config.mjs took 73ms
+⚠ Slow filesystem detected. The benchmark took 232ms. If \\?\C:\laragon\www\ai-research-lab\.next\dev is a network drive, consider moving it to a local folder.
+See more: https://nextjs.org/docs/app/guides/local-development
+
+ GET / 404 in 537ms (next.js: 297ms, application-code: 240ms)
+ GET /dashboard 404 in 808ms (next.js: 67ms, generate-params: 516ms, application-code: 224ms)
+[?25h
+
+C:\laragon\www\ai-research-lab>

@@ -1,0 +1,14 @@
+npm notice run ai-research-lab@0.1.0 dev
+npm notice run node scripts/dev.mjs
+[dev] Killed existing process 12408 on port 3000
+[dev] Starting Next.js on port 3000...
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 556ms
+✓ Running next.config.mjs took 67ms
+
+ GET /en 200 in 1858ms (next.js: 959ms, generate-params: 552ms, application-code: 348ms)
+ HEAD /en/dashboard 200 in 724ms (next.js: 35ms, generate-params: 498ms, application-code: 190ms)
+[?25h

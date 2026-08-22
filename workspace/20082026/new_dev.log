@@ -1,0 +1,10 @@
+[dev] Starting Next.js on port 3000...
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 775ms
+✓ Running next.config.mjs took 76ms
+
+ GET /en 200 in 1213ms (next.js: 292ms, generate-params: 568ms, application-code: 353ms)
+[?25h

@@ -1,0 +1,16 @@
+npm notice run ai-research-lab@0.1.0 dev
+npm notice run next dev --webpack
+▲ Next.js 16.3.1 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://100.64.163.124:3000
+- Environments: .env.local, .env
+✓ Ready in 488ms
+✓ Running next.config.mjs took 62ms
+
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of C:\laragon\www\ai-research-lab\node_modules\next-intl\dist\esm\production\extractor\format\index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+○ Compiling /_not-found ...
+ GET / 404 in 9.1s (next.js: 8.9s, application-code: 257ms)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of C:\laragon\www\ai-research-lab\node_modules\next-intl\dist\esm\production\extractor\format\index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+ GET /dashboard 404 in 3.7s (next.js: 2.8s, generate-params: 599ms, application-code: 305ms)
